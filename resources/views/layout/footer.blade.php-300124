@@ -1,0 +1,76 @@
+ </div>
+ <!-- End of Main Content -->
+
+ <!-- Footer -->
+ <footer class="sticky-footer bg-white">
+     <div class="container my-auto">
+         <div class="copyright text-center my-auto">
+             <span>Copyright &copy;
+                 <script>
+                     document.write(new Date().getFullYear())
+                 </script> Your Website
+             </span>
+         </div>
+     </div>
+ </footer>
+ <!-- End of Footer -->
+
+ </div>
+ <!-- End of Content Wrapper -->
+
+ </div>
+ <!-- End of Page Wrapper -->
+
+
+ <!-- Scroll to Top Button-->
+ <div id="backto-top"><i class="fa-solid fa-arrow-up"></i></div>
+
+ <!-- Logout Modal-->
+ <div class="modal" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+             <div class="modal-body">
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 <h5 class="modal-title">Ready to Leave?</h5>
+                 <p>Select "Logout" below if you are ready to end your current session.</p>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                 <a class="btn btn-primary" href="login.php">Logout</a>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+ <!-- Bootstrap core JavaScript-->
+ <script src="{{ asset('public/js/jquery.min.js') }}"></script>
+ <script src="{{ asset('public/js/bootstrap.bundle.min.js') }}"></script>
+ <script src="{{ asset('public/js/sb-admin-2.js') }}"></script>
+ <script src="{{ asset('public/js/jquery.fancybox.min.js') }}"></script>
+ <script src="{{ asset('public/js/jquery.dataTables.min.js') }}"></script>
+ <script src="{{ asset('public/js/dataTables.bootstrap5.min.js') }}"></script>
+ <script src="{{ asset('public/js/dataTables.responsive.min.js') }}"></script>
+ <script src="{{ asset('public/js/select2.min.js') }}"></script>
+ <script src="https://cdn.ckeditor.com/4.13.0/full/ckeditor.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script>
+     $(document).ready(function() {
+         $('#example, #UserCareerList, #UsersFilesList, #PositionsList, #PositionsList, #RolesList, #ProductsList, #UsersList')
+             .DataTable({
+                 responsive: true
+             });
+     });
+ </script>
+ <script>
+     jQuery(".select2-multiple").select2({
+         theme: "bootstrap",
+         placeholder: "Select...",
+         maximumSelectionSize: 6,
+         containerCssClass: ':all:'
+     });
+ </script>
+ <script src="{{ asset('public/js/custom.js') }}"></script>
+ </body>
+
+ </html>
